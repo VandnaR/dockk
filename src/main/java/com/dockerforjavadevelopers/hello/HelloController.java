@@ -12,7 +12,7 @@ public class HelloController {
 	private String amountlowmsg;
     @RequestMapping("/")
     public String index() {
-        return "helo";
+        return amountlowmsg;
     }
     
 }
