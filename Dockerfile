@@ -2,9 +2,9 @@
 
 FROM maven:3.5.2-jdk-8-alpine AS maven_build
 
-ARG YOURAPP_ENV=production
+#ARG YOURAPP_ENV=production
 
-ENV YOURAPP_ENV="${YOURAPP_ENV}"
+#ENV YOURAPP_ENV="${YOURAPP_ENV}"
 
 COPY pom.xml /tmp/
 
