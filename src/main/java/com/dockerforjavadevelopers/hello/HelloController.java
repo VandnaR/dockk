@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class HelloController {
     
-	@Value(value="${spring.msg}")
-	private String amountlowmsg;
+	@Value(value="${app.msg}")
+	private String txt;
     @RequestMapping("/")
     public String index() {
-        return amountlowmsg;
+        return txt;
     }
     
 }
