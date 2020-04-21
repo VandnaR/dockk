@@ -12,8 +12,9 @@ public class HelloController {
 	@Value("${DOCKER_ENV_VARIABLE:default}")
 	private String amountlowmsg;
     @RequestMapping(value="/docker-env",method=RequestMethod.GET)
+	
     public String index() {
-        return amountlowmsg;
+        return txt;
     }
     
 }
