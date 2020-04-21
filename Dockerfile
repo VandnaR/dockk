@@ -4,7 +4,7 @@ FROM maven:3.5.2-jdk-8-alpine AS maven_build
 
 #ARG YOURAPP_ENV=production
 
-#ENV YOURAPP_ENV="${YOURAPP_ENV}"
+ENV MESSAGE=HEY
 
 COPY pom.xml /tmp/
 
