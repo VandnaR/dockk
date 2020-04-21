@@ -1,10 +1,11 @@
+
 # Maven build container 
 
 FROM maven:3.5.2-jdk-8-alpine AS maven_build
 
 #ARG YOURAPP_ENV=production
 
-#ENV YOURAPP_ENV="${YOURAPP_ENV}"
+ENV DOCKER_ENV_VARIABLE heloworld
 
 COPY pom.xml /tmp/
 
@@ -13,6 +14,8 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 
 RUN mvn package
+
+RUN echo "$DOCKER_ENV_VARIABLE"
 
 #pull base image
 
