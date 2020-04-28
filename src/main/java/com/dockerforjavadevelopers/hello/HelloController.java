@@ -14,7 +14,7 @@ public class HelloController {
     @RequestMapping(value="/docker-env",method=RequestMethod.GET)
 	
     public String index() {
-        return txt;
+        return amountlowmsg;
     }
     
 }
